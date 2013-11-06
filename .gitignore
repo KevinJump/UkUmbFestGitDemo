@@ -1,0 +1,82 @@
+# Umbraco gitIgnore
+# Kevin Jump - consistently ignoring stuff since 1976
+#
+# This is a general + Umbraco ignore file.
+#
+# Gotten from bits of the internet 
+#   http://stackoverflow.com/questions/8527597/gitignore-file-syntax
+#   http://offroadcode.com/blog/2012/4/5/mercurial-ignore-file-for-umbraco/
+#
+
+##### File globs to match ####
+syntax: glob
+
+# Umbraco v6 stuff
+# ================
+
+web.config
+web.config.*
+[Gg]lobal.asax
+
+
+*/App_Browsers/
+*/App_Data/umbraco.config
+*/App_Data/Temp/*
+*/App_Data/ExamineIndexes/*
+*/App_Data/ClientDependency/
+*/App_Data/Preview/
+*/App_Data/Logs/
+*/App_Data/packages/
+
+aspnet_client/
+data/
+install/
+Media/
+*/umbraco/
+*/umbraco_client/
+default.aspx
+global.aspx
+
+*/uSync.Archive/
+
+*/_systemUmbracoIndexDontDelete/*
+
+# ================================
+#    Visual Studio + Tools + OS
+# ================================
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+ipch/
+obj/
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+
+# Resharpener
+*_ReSharper*
+
+# ImageGen
+*/Cached/*
+www/media/*/Cached/
+
+# Misc crud
+*.orig
+*/Thumbs.db
+*/log.txt
